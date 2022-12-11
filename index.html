@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserva | Cevichería Capricho</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+
+    <main>
+      <div class="box">
+        <div class="inner-box">
+          <div class="forms-wrap">
+            <form action=""  class="sign-in-form">
+              <div class="logo">
+                <img src="./images/logo.png" alt="capricho" />
+                <h4>C.Capricho</h4>
+              </div>
+
+              <div class="heading">
+                <h2>Reserva</h2>
+                <h6>Deseas ver la carta?</h6>
+                <a href="carta.pdf" target="_blank" class="toggle">Carta</a>
+                <br>
+            
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    class="input-field"
+                  autocomplete="off"
+                    id="name"
+                    required 
+                  />
+                  <label>Nombres y Apellidos</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="number"
+                    class="input-field"
+                 
+                    id="count"
+                    required min="0" max="58"
+                  />
+                  <label>Cantidad de personas</label>
+                </div>
+
+                <div class="input-wrap">
+                    <input
+                      type="date"
+                      class="input-field"
+                      pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+                      id="fecha"
+                      min="2022-12-10"
+                      max="2023-01-29"
+                    />
+                  </div>
+
+                  <div class="input-wrap">
+                    <input 
+                      type="time"
+                      class="input-field"
+                      
+                      id="hora"
+                      required min="10:00" max="17:00" 
+                    />
+                  </div>
+
+                
+
+               <div class="input-wrap">
+                <select id="local"  name="listaservicios">
+                    <option disabled selected>Local de Atención</option>
+                    <option>Capricho - Metropolitana </option>
+                    <option>Capricho - Los Angeles</option>
+                  </select>
+               </div>
+
+               <div id="respuesta"></div>
+
+               <i class='bx bxl-whatsapp'></i>
+                <input type="submit" id="submit" value=" Enviar Reserva" class="sign-btn" />
+
+                <p class="text">
+                  Tus datos de la reserva serán enviados a
+                  <a href="#">WhatsApp</a> antes de confirmar la reserva.
+                </p>
+              </div>
+            </form>
+
+        
+          </div>
+
+          <div class="carousel">
+            <div class="images-wrapper">
+              <img src="./images/1.png" class="image img-1 show" alt="" />
+              <img src="./images/2.png" class="image img-2" alt="" />
+              <img src="./images/3.png" class="image img-3" alt="" />
+              <img src="./images/4.png" class="image img-4" alt="" />
+            </div>
+
+            <div class="text-slider">
+              <div class="text-wrap">
+                <div class="text-group">
+                  <h2>Los mejores Sabores</h2>
+                  <h2>La mejor Convinación</h2>
+                  <h2>La Mejor Atención</h2>
+                  <h2>Cevichería Capricho</h2>
+                </div>
+                
+              </div>
+            <p class="text-parraf">Esta navidad pásala disfrutando de nuestros mejores platos, nuestro menú realizado con insumos de calidad y la mejor combinación de sabores, una atención envidiable que lograra brindarte la mejor experiencia, que esperas, visítanos. </p>
+              <div class="bullets">
+                <span class="active" data-value="1"></span>
+                <span data-value="2"></span>
+                <span data-value="3"></span>
+                <span data-value="4"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Javascript file -->
+<script src="enviar.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
